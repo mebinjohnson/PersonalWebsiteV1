@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
     <script src="jquery-3.3.1.js"></script>
-    <link rel="icon" href="https://www.scdn.co/i/_global/favicon.png">
+    <link rel="icon" href="webicon.png">
 </head>
 <body>
     <nav id="navbar">
@@ -38,7 +38,7 @@
     </nav>
     <div id="resize">
             <ul id="menu">
-                  <li><a href="#">About</a></li>
+                  <li><a href="#about">About</a></li>
                   <li><a href="#">Skills</a></li>
                   <li><a href="#">Education</a></li>
                   <li><a href="#">Works</a></li>
@@ -54,11 +54,12 @@
             <h3>Welcome to my Personal Profile</h3>
         </div>
     </div>
-
-    <div class="bgimg-2">
-            <div class="caption">
-              <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"> </span>
-            </div>
+    <div class="wrapper"></div>
+        <div class="bgimg-2">
+                <div class="caption">
+                <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"> </span>
+                </div>
+        </div>
     </div>
 
 
@@ -115,6 +116,8 @@
 
     $(this).toggleClass('on');
     $("#resize").toggleClass("active");
+    var elementStyle = document.getElementsByTagName("nav").style;
+    elementStyle.position="static"
 
     });
     </script>
