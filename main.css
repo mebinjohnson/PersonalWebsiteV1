@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro');
-
-
+@font-face {
+	font-family: 'wild';
+  src: url('wildyouth.otf');
+}
 * {
   margin: 0;
   padding: 0;
@@ -72,7 +74,7 @@ nav #my_logo{
 nav #my_logo a {
   color: #fff;
   transition: all 0.3s ease-out;
-  font-family: 'Wild Youth';
+  font-family: 'wild';
   font-weight: 300;
 }
 

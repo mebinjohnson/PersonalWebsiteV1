@@ -8,11 +8,3 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
-
-
-$("#toggle").click(function() {
-  
-    $(this).toggleClass('on');
-    $("#resize").toggleClass("active");
-
-});
