@@ -45,19 +45,23 @@ body {
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
+  text-align: left;
   font-size: 70px;
 }
 .header h2 {
   color: #fff;
   font-family: "Advent Pro";
   font-weight: lighter;
+  text-transform: uppercase;
   font-size: 30px;
 }
 .header h3 {
   color: #fff;
   margin-left: 45%;
   font-family: "Advent Pro";
+  text-transform: uppercase;
   font-weight: lighter;
+  text-align: right;
   font-size: 20px;
 }
 
@@ -73,7 +77,7 @@ nav {
 nav #my_logo{
   float: left;
   display: block;
-  margin-left: 5%;
+  margin-left: 15px;
   font-size: 20px;
   line-height: 70px;
   font-weight: bold;
@@ -83,13 +87,14 @@ nav #my_logo a {
   color: #fff;
   transition: all 0.3s ease-out;
   font-family: 'wild';
+  padding: 30px;
   font-weight: 300;
 }
 
+
 nav #menu{
-  left: 40%;
-  position: relative;
-  overflow: hidden;
+  left: 57%;
+  position: absolute;
 }
 
 nav #menu li {
@@ -107,6 +112,8 @@ nav #menu li a {
   font-family: 'Advent Pro', sans-serif;
 }
 
+nav #my_logo a:hover,
+nav #my_logo a:active,
 nav #menu li a:hover{
   background-color: white;
   color: black;
@@ -211,7 +218,7 @@ nav #menu li a:hover{
   }
 
   nav #my_logo {
-        margin-left: 18px;
+        margin-left: 0px;
   }
 
   #menu a {
