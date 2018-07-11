@@ -63,7 +63,7 @@ body {
 
 nav {
   width: 100%;
-  background: #000;
+  background: black;
   height: 70px;
   position: static;
   z-index: 1;
@@ -129,8 +129,9 @@ nav #menu li a:hover{
 }
 
 #toggle .span {
-  height: 3px;
+  height: 4px;
   background: #fff;
+  box-shadow: 0px 0px 20px 0px black;
   transition: all 0.3s ease-out;
   backface-visibility: hidden;
   margin: 5px auto;
@@ -257,9 +258,13 @@ nav #menu li a:hover{
 
 }
 
-.bgimg-2 {
+.bgimg-1 {
   margin-top: 700px;
-  background-image: url("min.jpg");
+  background-image: url("../images/min.jpg");
+  min-height: 200px;
+}
+.bgimg-2 {
+  background-image: url("../images/min2.jpg");
   min-height: 200px;
 }
 .caption {
