@@ -1,46 +1,114 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
 <html>
 <head>
     <title>Mebin Johnson</title>
-
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
     <link rel="icon" href="https://www.scdn.co/i/_global/favicon.png">
 </head>
 <body>
-    <header>
-        <nav>
-        <ul class="navbar">
-            <li><a style="font-family: 'Wild Youth'; padding: 1.5em 3em;" href="#home">Mebin Johnson</a></li>
-            <li><a href="#contactme">Contact Me</a></li>
-            <li><a href="#myworks">My Works</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#aboutme">About Me</a></li>
+    <nav id="navbar">
+        <span id="my_logo">
+                <a href="#home">Mebin Johnson</a></li>
+        </span>
+        <ul id="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-        </nav>
-    </header>
-    <section class="banner">
-        <div>
-                <h2 class="header">Well Hello There !?</h2>
-                <h1 class="header">I'm Mebin Johnson</h1>
+        <div id="toggle">
+            <div class="span" id="one"></div>
+            <div class="span" id="two"></div>
+            <div class="span" id="three"></div>
         </div>
-    </section>
+    </nav>
+    <div id="resize">
+            <ul id="menu">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Skills</a></li>
+                  <li><a href="#">Education</a></li>
+                  <li><a href="#">Works</a></li>
+                  <li><a href="#">Contact</a></li>
+            </ul>
+      </div>
 
-    <button class="btn-2"><span>Hover Me 2</span></button>
-    <div class="about" >
 
-        <h2>About Me</h2>
+    <div class="wrapper">
+        <div class="header">
+            <h2>Well Hello There !?</h2>
+            <h1>I'm Mebin Johnson</h1>
+            <h3>Welcome to my Personal Profile</h3>
+        </div>
+    </div>
+
+    <div class="bgimg-2">
+            <div class="caption">
+              <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"> </span>
+            </div>
+    </div>
+
+
+
+
+    <div id="about" class="about">
+            <h2 style="text-align:center;">About Me</h2>
+            <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success. Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge and abilities that let me work in fast-paced environment and can constantly multi-task.
+            </p>
+    </div>
+
+
+    <div id="about" class="about">
+        <h2 style="text-align:center;">About Me</h2>
         <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success. Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge and abilities that let me work in fast-paced environment and can constantly multi-task.
         </p>
     </div>
 
+
+    <div id="about" class="about">
+        <h2 style="text-align:center;">About Me</h2>
+        <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success. Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge and abilities that let me work in fast-paced environment and can constantly multi-task.
+        </p>
+    </div>
+
+
+
+    <div id="about" class="about">
+        <h2 style="text-align:center;">About Me</h2>
+        <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success. Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge and abilities that let me work in fast-paced environment and can constantly multi-task.
+        </p>
+    </div>
+
+    <button class="btn-2"><span>Hover Me 2</span></button>
+
     <footer>
-        <div class="container">
-                <small>© Crafted from Scratch. Mebin Johnson</small>
+
+        </div>
+        <div style="position:relative;">
+                <div style="color:#ddd;background-color:black;text-align:center;padding:50px 80px;text-align: justify;">
+                    <small>© Crafted from Scratch. Mebin Johnson.</small>
+                </div>
         </div>
 
     </footer>
+
+
+    <script>
+
+        $("#toggle").click(function() {
+  
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+  
+        });
+  
+  
+        </script>
 </body>
 </html>

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  font-family: 'Raleway','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-size: cover;
+  display: table;
+}
+#wrapper{
+  position: relative;
+	display:block;
+	width:90%;
+	margin:auto;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+
+.header h1 {
+  color: #fff;
+  font-family: 'RalewayBold', sans-serif;
+  font-weight: 200;
+  font-size: 70px;
+}
+.header h2 {
+  color: #fff;
+  font-family: "Advent Pro";
+  font-weight: 200;
+  font-size: 30px;
+}
+.header h3 {
+  color: #fff;
+  margin-left: 45%;
+  font-family: "Advent Pro";
+  font-size: 20px;
+}
+
+nav {
+  width: 100%;
+  background: #000;
+  height: 70px;
+  position: fixed;
+  z-index: 1;
+  transition: top 0.7s;
+}
+
+nav #my_logo{
+  float: left;
+  display: block;
+  margin-left: 54px;
+  font-size: 20px;
+  line-height: 70px;
+  font-weight: bold;
+}
+
+nav #my_logo a {
+  color: #fff;
+  transition: all 0.3s ease-out;
+  font-family: 'Wild Youth';
+  font-weight: 300;
+}
+
+nav #menu{
+  left: 45%;
+  position: relative;
+  overflow: hidden;
+}
+
+nav #menu li {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 70px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav #menu li a {
+  color: #fff;
+  float: left;
+  padding: 0px 30px;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+nav #menu li a:hover{
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+  transition: background-color 0.5s ease, transform .3s, color 0.5s ease;
+}
+
+#toggle {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#toggle .span {
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease-out;
+  backface-visibility: hidden;
+  margin: 5px auto;
+}
+
+#toggle.on #one {
+  transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+#toggle.on #two {
+  opacity: 0;
+}
+
+#toggle.on #three {
+  transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+
+#resize {
+  z-index: 1;
+  top: 0px;
+  position: absolute;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-out;
+  display: table;
+}
+
+#resize #menu {
+  height: 90px;
+  display: table-cell;
+  vertical-align: center;
+}
+
+#resize #menu li {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 50px;
+  min-height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+  margin-top:140px;
+}
+
+#resize #menu li a {
+  color: #fff;
+}
+
+#resize.active {
+  visibility: visible;
+  opacity: 0.99;
+}
+
+
+@media(max-width: 768px) {
+  #toggle {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 6px;
+  }
+
+  nav #my_logo {
+        margin-left: 18px;
+  }
+
+  #menu a {
+        font-family: "Advent Pro";
+        font-weight: 200;
+        font-size: 20px;
+  }
+
+  nav #menu {
+        display: none;
+  }
+}
+
+@media(min-width: 768px) {
+  #resize {
+        visibility: hidden !important;
+  }
+}
+
+
+
+.about{
+  color: black;
+  display: block;
+  padding: 80px;
+  padding-left: 20%;
+  padding-right: 20%;
+  background: white;
+}
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-2 {
+  margin-top: 800px;
+  background-image: url("min.jpg");
+  min-height: 200px;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
