@@ -55,7 +55,7 @@ nav {
   width: 100%;
   background: #000;
   height: 70px;
-  position: fixed;
+  position: static;
   z-index: 1;
   transition: top 0.7s;
 }
