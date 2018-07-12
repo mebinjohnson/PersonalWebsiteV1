@@ -8,9 +8,11 @@
 <!-- iOS Safari -->
 <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
 
-<html>
+<html lang="en">
 <head>
     <title>Mebin Johnson</title>
+    <meta name="description" content="">
+    <meta name="author" content="mebinjohnson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
@@ -26,10 +28,10 @@
         </span>
         <ul id="menu">
             <li><a href="#about">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div id="toggle">
             <div class="span" id="one"></div>
@@ -40,36 +42,40 @@
     <div id="resize">
             <ul id="menu">
                   <li><a href="#about">About</a></li>
-                  <li><a href="#">Skills</a></li>
-                  <li><a href="#">Education</a></li>
-                  <li><a href="#">Works</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#works">Works</a></li>
+                  <li><a href="#contact">Contact</a></li>
             </ul>
       </div>
 
+    <header class="header-box">
+            <!-- <div class="logo"></div> -->
+            <div class="header-title">
+                <h2>Well Hello There !?</h2>
+                <h1>I'm Mebin Johnson</h1>
+                <h3>Welcome to my Personal Profile</h3>
+            </div>
+    </header>
 
-    <div class="wrapper">
-        <div class="header">
-            <h2>Well Hello There !?</h2>
-            <h1>I'm Mebin Johnson</h1>
-            <h3>Welcome to my Personal Profile</h3>
-        </div>
-    </div>
-    <div class="wrapper"></div>
+    <!-- <div class="wrapper"></div>
         <div class="bgimg-1">
                 <div class="caption">
                 <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"> </span>
                 </div>
         </div>
-    </div>
+    </div> -->
 
 
 
-
-    <div id="about" class="about">
-            <h2 style="text-align:center;">About Me</h2>
-            <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success. Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge and abilities that let me work in fast-paced environment and can constantly multi-task.
-            </p>
+    <div class="wrapper">
+        <div id="about" class="about">
+                <h2 style="text-align:center;">About Me</h2>
+                <hr>
+                <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success. Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge and abilities that let me work in fast-paced environment and can constantly multi-task.
+                </p>
+                <hr>
+        </div>
     </div>
 
     <div class="bgimg-2">
@@ -78,26 +84,36 @@
         </div>
     </div>
 
-
-    <div id="about" class="about">
-        <h2 style="text-align:center;">About Me</h2>
+    <div class="wrapper">
+    <div id="skills" class="about">
+        <h2 style="text-align:center;">Skills</h2>
+        <hr>
         <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success. Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge and abilities that let me work in fast-paced environment and can constantly multi-task.
         </p>
+        <hr>
+    </div>
     </div>
 
 
-    <div id="about" class="about">
-        <h2 style="text-align:center;">About Me</h2>
+    <div id="education" class="about">
+        <div style="transform: skew(0deg, -5deg);">
+        <h2 style="text-align:center;">Education</h2>
+        <hr>
         <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success. Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge and abilities that let me work in fast-paced environment and can constantly multi-task.
         </p>
+        <hr>
+    </div>
     </div>
 
 
     <div class="content_main">
         <article>
-        <h2 style="text-align:center;">About Me</h2>
+        <h2 style="text-align:center;">Works</h2>
+        <hr>
         <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success. Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge and abilities that let me work in fast-paced environment and can constantly multi-task.
         </p>
+        <hr>
+        <button onclick=location.href='https://drive.google.com/open?id=1qMS2RxZCRmjL02657nsgeY6xwCunpvYa' class="btn-2"><span>Download Resume</span></button>
         </article>
     </div>
 
@@ -109,30 +125,24 @@
 
     <footer>
 
-        </div>
         <div class="row footer-stuff">
-            <small>Crafted from Scratch. © Mebin Johnson</small>
+            
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="https://www.linkedin.com/in/mebinjohnson/" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-youtube"></a>
             <a href="https://www.instagram.com/mebzjohnson/" class="fa fa-instagram"></a>
         </div>
+        <small>Crafted from Scratch. © Mebin Johnson</small>
     </footer>
-
-
-
-    <script>
+<script>
     $("#toggle").click(function() {
-
     $(this).toggleClass('on');
     $("#resize").toggleClass("active");
     var elementStyle = document.getElementsByTagName("nav").style;
     elementStyle.position="static"
 
-    });
-    </script>
-
-
+});
+</script>
 </body>
 </html>
