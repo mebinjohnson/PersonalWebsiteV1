@@ -58,7 +58,7 @@ body {
 
 .header-box{
   position: relative;
-  height: 700px;
+  height: 750px;
   margin: auto;
   background-image: url(../images/black-patt.jpg);
   background-size: auto 600px;
@@ -130,6 +130,49 @@ body {
   font-size: 20px;
 }
 
+.navbar-default {
+  border-color: transparent;
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav {
   width: 100%;
   background: black;
@@ -150,6 +193,7 @@ nav #my_logo{
 
 nav #my_logo a {
   color: #fff;
+  /* color: #000; */
   display: inline;
   transition: all 0.3s ease-out;
   font-family: 'wild';
@@ -173,17 +217,19 @@ nav #menu li {
 
 nav #menu li a {
   color: #fff;
+  /* color: #000; */
   float: left;
   padding: 0px 30px;
   font-family: 'Advent Pro', sans-serif;
 }
 
+.active,
 nav #my_logo a:hover,
-nav #my_logo a:active,
 nav #menu li a:hover{
   background-color: white;
   color: black;
   transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: background-color 0.5s ease, transform .3s, color 0.5s ease;
 }
 nav #my_logo a:active{
@@ -274,7 +320,7 @@ nav #my_logo a:active{
 
 @media(max-width: 768px) {
   .header-title h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   .header-title h2 {
     font-size: 20px;
@@ -319,13 +365,13 @@ nav #my_logo a:active{
   z-index: 3;
   transform: skew(0deg, -5deg);
   overflow: hidden;
+  margin-top: -60px;
   background: white;
 }
 
 .about{
   color: black;
   display: block;
-  background: white;
   padding: 80px;
   transform: skew(0deg, 5deg);
   z-index: 3;
@@ -337,17 +383,6 @@ nav #my_logo a:active{
 .about p{
   padding-top: 20px;
 }
-/* .wrapper about.skew::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 120vw;
-  height: 100%;
-  transform: translate(-50%, -50%) rotate(-30deg) skew(-30deg);
-  background: lightgray;
-  z-index: -1;
-} */
 
 
 
@@ -441,13 +476,16 @@ nav #my_logo a:active{
   background: white;
   color: black;
   z-index: 2;
-  margin-bottom: 150px;
+  width: 100%;
   overflow: hidden; }
   .content_main article {
     padding: 100px 0;
     max-width: 640px;
     margin: 0 auto;
     text-align: center; }
+  .content_main:nth-last-child(1){
+    margin-bottom: 320px;
+  }
 
 
 footer {
