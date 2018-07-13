@@ -61,7 +61,7 @@ body {
   position: relative;
   height: 750px;
   margin: auto;
-  background-image: url(../images/black-back.jpg);
+  background-image: url(../images/black_back.jpg);
   background-size: auto 600px;
   background-position: top center;
   background-attachment: fixed;
@@ -257,6 +257,10 @@ nav #my_logo a:active{
 
 
 @media(max-width: 768px) {
+  .header-box{
+    height: 750px;
+    background-image: url(../images/black_water_mob.jpg);
+  }
   .header-title h1 {
     font-size: 45px;
   }
