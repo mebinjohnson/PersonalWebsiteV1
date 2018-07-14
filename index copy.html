@@ -1,22 +1,28 @@
 <!doctype html>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<meta charset=UTF-8>
 <meta content=#000000 name=theme-color>
 <meta content=#000000 name=msapplication-navbutton-color>
 <meta content=#000000 name=apple-mobile-web-app-status-bar-style>
-<html class="no-js" lang="en" dir="ltr">
+
+<html lang=en>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mebin Johnson</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <meta content="" name=description>
+    <meta content=mebinjohnson name=author>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="ie=edge" http-equiv=X-UA-Compatible>
+    <link href=css/app.css rel=stylesheet>
+    <script src=js/app.js></script>
     <script src=js/jquery-3.3.1.js></script>
     <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet>
     <link href=webicon.png rel=icon>
 </head>
 
-<body id="home">
+<body id="page-top">
+    <!-- Navigation -->
+
     <nav id="navbar" class="navbar">
         <span id="my_logo">
             <a href="#home">Mebin Johnson</a>
@@ -65,7 +71,7 @@
         </ul>
     </div>
 
-    <header class="header-box">
+    <header id="home" class="header-box">
         <div class="header-title">
             <h2>Well Hello There !?</h2>
             <h1>I'm Mebin Johnson</h1>
@@ -75,15 +81,15 @@
     </header>
 
 
+
+
     <div id="about" class="wrapper">
         <div class="about">
             <h2 style="text-align:center;">About Me</h2>
             <hr>
-            <p>
-                I'm an aspiring Fronted Developer and UX designer. Currently pursuing my B.Tech degree Degree focused in Information Technology.
-                I have good academic records and extracurricular success. Extensive leadership qualities, particularly managing
-                and coordinating small teams. I have strong knowledge and abilities that let me work in fast-paced environment
-                and can constantly multi-task.
+            <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success.
+                Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge
+                and abilities that let me work in fast-paced environment and can constantly multi-task.
             </p>
             <hr>
         </div>
@@ -97,7 +103,8 @@
             <hr>
             <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success.
                 Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge
-                and abilities that let me work in fast-paced environment and can constantly multi-task.</p>
+                and abilities that let me work in fast-paced environment and can constantly multi-task.
+            </p>
             <hr>
         </div>
     </div>
@@ -145,7 +152,7 @@
         </div>
     </div>
 
-    <footer class="">
+    <footer>
 
         <div class="row footer-stuff">
 
@@ -157,20 +164,15 @@
         </div>
         <small>Crafted from Scratch. © Mebin Johnson</small>
     </footer>
-
-
-    <!-- Scripts - jQuery -->
     <script>
         $("#toggle").click(function () {
             $(this).toggleClass('on');
             $("#resize").toggleClass("active");
-            $('body').toggleClass("noScroll");
             var elementStyle = document.getElementsByTagName("nav").style;
             elementStyle.position = "static"
         });
         $('#resize ul li a').click(function () {
             $('#toggle').toggleClass('on');
-            $('body').toggleClass("noScroll");
             $("#resize").toggleClass("active");
             var elementStyle = document.getElementsByTagName("nav").style;
             elementStyle.position = "static"
@@ -178,6 +180,8 @@
 
         $(document).ready(function () {
             $(document).on("scroll", onScroll);
+
+            //smoothscroll
             $('a[href^="#"]').on('click', function (e) {
                 e.preventDefault();
                 $(document).off("scroll");
@@ -212,21 +216,27 @@
                     currLink.removeClass("active");
                 }
             });
-            $(window).scroll(function (e) {
-                parallax();
-            });
-
-            function parallax() {
-                var scrolled = $(window).scrollTop();
-                $('.header-box').css('background-position', 'center ' + (scrolled * 0.35) + 'px');
-            }
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- <script src="js/vendor/jquery.js"></script> -->
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+
 </body>
 
 </html>
+
+
+
+
+<!-- <div class="bgimg-2">
+        <div class="caption">
+          <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"> </span>
+        </div>
+    </div> -->
+
+<!-- <div class="wrapper"></div>
+        <div class="bgimg-1">
+                <div class="caption">
+                <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"> </span>
+                </div>
+        </div>
+    </div> -->

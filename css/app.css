@@ -5,7 +5,7 @@
 	font-family: 'wild';
   src: url('../wildyouth.otf');
 }
-
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
 
 
 * {
@@ -54,6 +54,10 @@ body {
   font-family: 'Raleway',"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-size: cover;
   display: table;
+  overflow: auto;
+}
+body.noScroll {
+  overflow: hidden;
 }
 
 
@@ -61,11 +65,13 @@ body {
   position: relative;
   height: 750px;
   margin: auto;
+  background-color: black;
   background-image: url(../images/black_back.jpg);
   background-size: auto 600px;
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
   z-index: 2;
   overflow: hidden;}
 
@@ -526,3 +532,5 @@ button:hover .buttonspan::before, button:hover .buttonspan::after{
 .btn-2:hover .buttonspan::before, .btn-2:hover .buttonspan::after{
   transition-delay: 0s;
 }
+
+
