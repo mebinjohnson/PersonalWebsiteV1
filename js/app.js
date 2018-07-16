@@ -1,18 +1,16 @@
 $(document).foundation()
 if (document.documentElement.clientWidth < 768) {
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    var currentScrollpos = window.pageYOffset;
-    if (prevScrollpos > currentScrollpos) {
-        document.getElementById("navbar").style.top = "0";
-    } else {
-        document.getElementById("navbar").style.top = "-70px";
-    }
+    var prev = 0;
+    var $window = $(window);
+    var nav = $('.navbar');
 
-    prevScrollpos = currentScrollpos;
+    $window.on('scroll', function () {
+        var scrollTop = $window.scrollTop();
+        nav.toggleClass('hidden', scrollTop > prev);
+        prev = scrollTop;
+    });
 }
-}
-else{
+else {
     $(window).scroll(function (e) {
         parallax();
     });

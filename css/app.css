@@ -51,8 +51,8 @@ summary {
 body {
   width: 100%;
   height: 100vh;
-  background: black;
   line-height: 1.6;
+  background:white;
   font-weight: 400;
   font-family: 'Raleway',"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-size: cover;
@@ -129,6 +129,14 @@ body.noScroll {
   position: fixed;
   z-index: 10;
   transition: top 0.7s;
+  transition: -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.navbar.hidden {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .navbar #my_logo{
@@ -353,9 +361,8 @@ body.noScroll {
 
 .education{
   color: white;
-  background: #3b5998;
+  background: #e74c3c;
   display: block;
-  margin-top: -70px;
   padding: 80px 0;
 }
 
@@ -398,7 +405,6 @@ body.noScroll {
 
 .content_main {
   position: relative;
-  background: white;
   color: black;
   z-index: 2;
   width: 100%;
@@ -408,10 +414,24 @@ body.noScroll {
     max-width: 640px;
     margin: 0 auto;
     text-align: center; }
+
   .content_main:nth-last-child(1){
-    margin-bottom: 400px;
+    margin-bottom: px;
+    z-index: 3;
   }
 
+.contact{
+    position: relative;
+    color: black;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+}
+.contact article {
+  padding: 100px 0;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center; }
 
 
 
@@ -422,7 +442,7 @@ body.noScroll {
                           B U T T O N
 -------------------------------------------------------------------*/
 
-button{
+.button-line{
   display: inline-block;
   position: relative;
   background: none;
@@ -433,7 +453,7 @@ button{
   border: #666;
 
 }
-button:hover{
+.button-line:hover{
   /* background: rgba(0,0,0,0.09); */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: background 0.7s ease, box-shadow 0.7s ease;
@@ -442,7 +462,7 @@ button:hover{
   display: block;
   padding: 15px 50px;
 }
-button::before, button::after{
+.button-line::before, .button-line::after{
   content:"";
   width: 0;
   height: 2px;
@@ -459,10 +479,10 @@ button::before, button::after{
   transition: all 0.2s linear;
   background: black;
 }
-button:hover::before, button:hover::after{
+.button-line:hover::before, .button-line:hover::after{
   width: 100%;
 }
-button:hover .buttonspan::before, button:hover .buttonspan::after{
+.button-line:hover .buttonspan::before, .button-line:hover .buttonspan::after{
   height: 100%;
 }
 
@@ -500,10 +520,11 @@ button:hover .buttonspan::before, button:hover .buttonspan::after{
                             F O O T E R
 -------------------------------------------------------------------*/
 
-footer{
-  color: white;
+.profile-photo{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 8rem;
 }
-
 
 .social-icon-button {
   border-radius: 3.6rem;
@@ -548,52 +569,123 @@ footer{
 }
 
 .social-icon-button:hover .fa {
-  color: #fefefe;
+  color: black;
+
 }
 
 .social-icon-button:hover span {
   display: block;
-  border-radius: 3.6rem;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 3rem;
+  border-radius: 0.2rem;
+  height: 3rem;
 }
 
-.social-icon-button.instagram {
+.social-icon-button {
   color: white;
 }
 
-.social-icon-button.instagram span {
-  background-color: #cd486b;
+.social-icon-button span {
+  background-color: white;
+  color: #000;
 }
 
-.social-icon-button.twitter {
+/* .social-icon-button.twitter {
   color: white;
 }
 
 .social-icon-button.twitter span {
   background-color: #55acee;
 }
+ */
 
-.social-icon-button.facebook {
+
+.site-footer-top{
+  padding: 2rem 2rem;
+  background: #212121;
   color: white;
 }
 
-.social-icon-button.facebook span {
-  background-color: #3b5998;
+
+.site-footer .column-block {
+  margin-bottom: 30px;
 }
-.social-icon-button.github {
+
+.site-footer > .row {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .site-footer .columns {
+    margin-bottom: 2rem;
+  }
+}
+
+.site-footer-name {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.site-footer-title {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.site-footer-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.site-footer-block .fa {
+  font-size: 2rem;
   color: white;
 }
 
-.social-icon-button.github span {
-  background-color: grey;
-}
-.social-icon-button.linkedin {
-  color:  white;
+.site-footer-block p {
+  margin-left: 1rem;
+  line-height: 1.125rem;
 }
 
-.social-icon-button.linkedin span {
-  background-color:  #4875B4;
+.site-footer-bottom {
+  background: black;
+  color: white;
+  padding: 1rem 3rem;
+}
+
+.site-footer-bottom .site-footer-bottom-links {
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.site-footer-bottom .site-footer-bottom-links a {
+  padding: 2rem;
+}
+.copyrights{
+  position: absolute; 
+  display: inline-block;
+  left: 0%;
+  padding-left: 3rem;
+  margin-top: 1.2rem;
+  overflow: hidden;
+}
+
+@media(max-width: 768px) {
+  .site-footer-bottom .site-footer-bottom-links {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .copyrights{
+    padding-left: 0;
+    position: relative; margin-top: 0.9rem;
+  }
+  .site-footer-bottom {
+    text-align: center;
+  }
 }
 
 
@@ -606,15 +698,9 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
+/* -----------------------------------------------------------------
+                    E D U C A T I O N - Timeline
+-------------------------------------------------------------------*/
 
 .timeline .timeline-item::after, .timeline .timeline-item::before {
   clear: both;
@@ -751,111 +837,61 @@ footer{
 
 
 
+.skills article {
+  padding: 80px 7rem;
+  margin: 0 auto;
+  max-width: 940px;
+  text-align: center; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.marketing-site-footer {
-  background: #2c3840;
-  color: #8aa0ae;
-  padding: 2rem 0 0;
+.marketing-site-features {
+  text-align: center;
+  padding: 2rem 0;
 }
 
-.marketing-site-footer .marketing-site-footer-menu-social a {
-  color: #fefefe;
-}
-
-.marketing-site-footer .column-block {
-  margin-bottom: 30px;
-}
-
-.marketing-site-footer > .row {
-  margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 39.9375em) {
-  .marketing-site-footer .columns {
-    margin-bottom: 2rem;
-  }
-}
-
-.marketing-site-footer-name {
-  color: #fefefe;
-  margin-bottom: 1rem;
+.marketing-site-features .fa {
   font-size: 2rem;
-}
-
-.marketing-site-footer-title {
-  color: #fefefe;
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  color: #1779ba;
 }
 
-.marketing-site-footer-block {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.marketing-site-features .marketing-site-features-title {
+  font-size: 1.125rem;
   margin-bottom: 1rem;
 }
 
-.marketing-site-footer-block .fa {
-  font-size: 2rem;
-  color: #020304;
-}
-
-.marketing-site-footer-block p {
-  margin-left: 1rem;
-  line-height: 1.125rem;
-}
-
-.marketing-site-footer-bottom {
-  background: #020304;
-  padding: 1rem 0;
-}
-
-.marketing-site-footer-bottom p,
-.marketing-site-footer-bottom .menu {
-  margin-bottom: 0;
-}
-
-.marketing-site-footer-bottom .marketing-site-footer-bottom-links {
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.marketing-site-footer-bottom .marketing-site-footer-bottom-links a {
-  color: #8aa0ae;
-}
-
-@media screen and (max-width: 63.9375em) {
-  .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+@media screen and (min-width: 40em) {
+  .marketing-site-features {
+    text-align: left;
   }
 }
 
-@media screen and (max-width: 63.9375em) {
-  .marketing-site-footer-bottom {
-    text-align: center;
-  }
+.marketing-site-features-headline {
+  text-align: center;
+  font-size: 24px;
 }
+
+.marketing-site-features-subheadline {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
