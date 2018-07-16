@@ -22,6 +22,7 @@
             <a href="#home">Mebin Johnson</a>
             </li>
         </span>
+
         <ul id="menu">
             <li>
                 <a href="#about">About</a>
@@ -71,7 +72,6 @@
             <h1>I'm Mebin Johnson</h1>
             <h3>Welcome to my Personal Profile</h3>
         </div>
-
     </header>
 
 
@@ -103,16 +103,68 @@
     </div>
 
 
-    <div id="education">
-        <div class="content_main">
-            <h2 style="text-align:center;">Education</h2>
-            <hr>
-            <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success.
-                Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge
-                and abilities that let me work in fast-paced environment and can constantly multi-task.
-            </p>
-            <hr>
+    <div id="education" class="education">
+        <h2 style="text-align:center; color:white; padding-top: 100px;">Education</h2>
+        <hr>
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <img src="images/university.png" class="" height="21" width="21" alt="">
+                </div>
+                <div class="timeline-content">
+                    <p class="timeline-content-date">2012-13</h2>
+                        <p>CBSE - Grade X
+                            <br>
+                            <a href="http://www.gemsoo-alquoz.com">Gems Our Own Indian School, Dubai</a>
+                        </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <img src="images/university.png" class="" height="21" width="21" alt="">
+                </div>
+                <div class="timeline-content right">
+                    <p class="timeline-content-date">2014-15</h2>
+                        <p>CBSE - Grade XII
+                            <br>
+                            <a href="http://www.gemsoo-alquoz.com">Gems Our Own Indian School, Dubai</a>
+                        </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <img src="images/college-graduation.png" class="" height="21" width="21" alt="">
+                </div>
+                <div class="timeline-content">
+                    <p class="timeline-content-date">2015-19</h2>
+                        <p>Bachelor of Technology in Information Technology
+                            <br>
+                            <a href="https://www.rajagiritech.ac.in">Rajagiri School of Engineering &amp; Technology, Kochi</a>
+                        </p>
+                </div>
+            </div>
+            <!-- <div class="timeline-item">
+                <div class="timeline-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M24 11.5c0 3.613-2.951 6.5-6.475 6.5-2.154 0-4.101-1.214-5.338-3h-2.882l-1.046-1.013-1.302 1.019-1.362-1.075-1.407 1.081-4.188-3.448 3.346-3.564h8.841c1.145-1.683 3.104-3 5.339-3 3.497 0 6.474 2.866 6.474 6.5zm-10.691 1.5c.98 1.671 2.277 3 4.217 3 2.412 0 4.474-1.986 4.474-4.5 0-2.498-2.044-4.5-4.479-4.5-2.055 0-3.292 1.433-4.212 3h-9.097l-1.293 1.376 1.312 1.081 1.38-1.061 1.351 1.066 1.437-1.123 1.715 1.661h3.195zm5.691-3.125c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5z"
+                        />
+                    </svg>
+                </div>
+                <div class="timeline-content right">
+                    <p class="timeline-content-date">2012</h2>
+                        <p>
+                            <a href="http://foundation.zurb.com/sites/docs/v/3.2.5/" target="_blank">Foundation 3.0</a> is released! This version comes with Sass and is the first framework to use
+                            mixins and Sass partials.
+                        </p>
+                </div>
+            </div> -->
         </div>
+
+
     </div>
 
 
@@ -133,10 +185,27 @@
             <article>
                 <h2 style="text-align:center;">Contact</h2>
                 <hr>
-                <p>I am currently pursuing my B.Tech degree in Kerala. I have good academic records and extracurricular success.
-                    Extensive leadership qualities, particularly managing and coordinating small teams. I have strong knowledge
-                    and abilities that let me work in fast-paced environment and can constantly multi-task.
-                </p>
+                <div class="card" style="padding: 20px; padding-top: 50px;">
+                    <form data-abide method="POST">
+                        <div class="grid-container">
+                            <div class="grid-x grid-padding-x">
+                                <div class="medium-6 cell">
+                                    <input type="text" placeholder="Your Name" name='name' required>
+                                </div>
+                                <div class="medium-6 cell">
+                                    <input type="tel" placeholder="Mobile" name="mobile">
+                                </div>
+                            </div>
+                            <div class="medium-6 cell">
+                                <input type="email" placeholder="Email" name="email" required>
+                            </div>
+                            <label>
+                                <textarea rows=5 placeholder="Leave a Message" name="message"></textarea>
+                            </label>
+                            <input type="submit" class="button expanded" value="Send Message" name="send">
+                        </div>
+                    </form>
+                </div>
                 <hr>
                 <button onclick=location.href='https://drive.google.com/open?id=1qMS2RxZCRmjL02657nsgeY6xwCunpvYa' class="btn-2">
                     <span class="buttonspan">Download Resume</span>
@@ -145,18 +214,156 @@
         </div>
     </div>
 
-    <footer class="">
+    <!-- <footer>
+        <div class="wrap row small-up-1 medium-up-3"></div>
+        <div class="column">
+            <p class="footer-copyright">© 1998–2018 ZURB, Inc.</p>
 
-        <div class="row footer-stuff">
-
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="https://www.linkedin.com/in/mebinjohnson/" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="https://www.instagram.com/mebzjohnson/" class="fa fa-instagram"></a>
         </div>
-        <small>Crafted from Scratch. © Mebin Johnson</small>
-    </footer>
+        <div class="column">
+            ad
+        </div>
+        <div class="column">
+            <a href="https://twitter.com/mebinjohnson" class="social-icon-button twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <span></span>
+            </a>
+
+            <a href="https://github.com/mebinjohnson" class="social-icon-button github">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <span></span>
+            </a>
+            <a href="https://www.linkedin.com/in/mebinjohnson/" class="social-icon-button linkedin">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <span></span>
+            </a>
+
+            <a href="https://www.facebook.com/mebinjohnson" class="social-icon-button facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <span></span>
+            </a>
+
+            <a href="https://www.instagram.com/mebzjohnson" class="social-icon-button instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                </i>
+                <span></span>
+            </a>
+        </div>
+        <!-- </div>
+            <div class="cell large-auto">
+                <button onclick=location.href='https://drive.google.com/open?id=1qMS2RxZCRmjL02657nsgeY6xwCunpvYa' class="btn-2">
+                    <span class="buttonspan">Download Resume</span>
+                </button>
+            </div>
+            <div class="cell large-auto">
+                    <small>Made using Zurb Foundation. </small>
+                <p>
+                    <small>© Mebin Johnson. All Rights Reserved. </small>
+                </p>
+            </div>
+            <div class="cell large-auto">
+                <a href="#" class="social-icon-button twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span></span>
+                </a>
+
+                <a href="#" class="social-icon-button github">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <span></span>
+                </a>
+                <a href="#" class="social-icon-button linkedin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <span></span>
+                </a>
+
+                <a href="#" class="social-icon-button facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span></span>
+                </a>
+
+                <a href="#" class="social-icon-button gplus">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </i>
+                    <span></span>
+                </a>
+
+            </div>
+        </div> -->
+    </footer> -->
+    <footer class="marketing-site-footer">
+            <div class="row medium-unstack">
+              <div class="medium-4 columns">
+                <h4 class="marketing-site-footer-name">Yeti Snowcone</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolorem accusantium architecto id quidem, itaque nesciunt quam ducimus atque.</p>
+                <ul class="menu marketing-site-footer-menu-social simple">
+                  <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                   <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+              <div class="medium-4 columns">
+                 <h4 class="marketing-site-footer-title">Contact Info</h4>
+                <div class="marketing-site-footer-block">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <p>100 W Rincon<br>San Francisco, CA 94015</p>
+                </div>
+                <div class="marketing-site-footer-block">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <p>1 (800) 555-5555</p>
+                </div>
+                <div class="marketing-site-footer-block">
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <p>yetirules@fakeemail.com</p>
+                </div>
+              </div>
+              <div class="medium-4 columns">
+                <h4 class="marketing-site-footer-title">Instagram</h4>
+                <div class="row small-up-3">
+                  <div class="column column-block">
+                    <img src="https://placehold.it/75" alt="" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="https://placehold.it/75" alt="" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="https://placehold.it/75" alt="" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="https://placehold.it/75" alt="" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="https://placehold.it/75" alt="" />
+                  </div>
+                  <div class="column column-block">
+                    <img src="https://placehold.it/75" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="marketing-site-footer-bottom">
+              <div class="row large-unstack align-middle">
+                <div class="column">
+                  <p>&copy; 2017 No rights reserved</p>
+                </div>
+                <div class="column">
+                  <ul class="menu marketing-site-footer-bottom-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+          
+
+
+
+
 
 
     <!-- Scripts - jQuery -->
@@ -212,14 +419,7 @@
                     currLink.removeClass("active");
                 }
             });
-            $(window).scroll(function (e) {
-                parallax();
-            });
 
-            function parallax() {
-                var scrolled = $(window).scrollTop();
-                $('.header-box').css('background-position', 'center ' + (scrolled * 0.35) + 'px');
-            }
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
