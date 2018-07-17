@@ -98,26 +98,55 @@
                 <!-- <h2 class="marketing-site-features-headline">Yeti Approved Features</h2> -->
                 <p class="marketing-site-features-subheadline subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit quaerat eos words and phrases.</p>
                 <hr>
-                <div class="grid-x">
+                <div class="grid-x grid-padding-x">
                     <div class="small-12 medium-auto columns">
-                        <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+                        <i class="fa fa-wrench" aria-hidden="true"></i>
                         <h4 class="marketing-site-features-title">Technical Skills</h4>
-                        <p class="marketing-site-features-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="marketing-site-features-desc">
+                            <ul style="list-style: disc;">
+                                <li>Python</li>
+                                <li>C++</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>XML</li>
+                                <li>Android App Development</li>
+
+
+                            </ul>
+                        </p>
                     </div>
                     <div class="small-12 medium-auto columns">
-                        <i class="fa fa-angellist" aria-hidden="true"></i>
-                        <h4 class="marketing-site-features-title">IDE &amp; Softwares</h4>
-                        <p class="marketing-site-features-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                        <h4 class="marketing-site-features-title">IDE, Services &amp; Softwares</h4>
+                        <p class="marketing-site-features-desc">
+                            <ul>
+                                <li>Visual Studio</li>
+                                <li>Android Studio</li>
+                                <li>Firebase</li>
+                                <li>Zurb Foundation</li>
+                                <li>GitHub</li>
+                                <li>Microsoft Office Suite</li>
+                            </ul>
+                        </p>
                     </div>
-                </div>
-                <div class="grid-x">
+                <!-- </div>
+                <div class="grid-x grid-padding-x"> -->
                     <div class="small-12 medium-auto columns">
-                        <i class="fa fa-bullseye" aria-hidden="true"></i>
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
                         <h4 class="marketing-site-features-title">Designing Skills</h4>
-                        <p class="marketing-site-features-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p class="marketing-site-features-desc">
+                            <ul>
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe Premiere Pro</li>
+                                <li>Adobe Creative Suite</li>
+                                <li>Adobe XD</li>
+                                <li>Adobe Indesign</li>
+                            </ul>
+                        </p>
                     </div>
                     <div class="small-12 medium-auto columns">
-                        <i class="fa fa-battery-full" aria-hidden="true"></i>
+                        <i class="fa fa-apple" aria-hidden="true"></i>
                         <h4 class="marketing-site-features-title">Operating Systems</h4>
                         <p class="marketing-site-features-desc">
                             <ul style="list-style: default; list-style-type: circle;">
@@ -142,7 +171,7 @@
 
             <div class="timeline-item">
                 <div class="timeline-icon">
-                    <img src="images/university.png" class="" height="21" width="21" alt="">
+                    <i class="fa fa-child fa-fw" aria-hidden="true" style="font-size:24px;color:white;"></i>
                 </div>
                 <div class="timeline-content">
                     <p class="timeline-content-date">2012-13</h2>
@@ -155,7 +184,7 @@
 
             <div class="timeline-item">
                 <div class="timeline-icon">
-                    <img src="images/university.png" class="" height="21" width="21" alt="">
+                    <i class="fa fa-pencil fa-5x" aria-hidden="true" style="font-size:24px;color:white;"></i>
                 </div>
                 <div class="timeline-content right">
                     <p class="timeline-content-date">2014-15</h2>
@@ -168,7 +197,7 @@
 
             <div class="timeline-item">
                 <div class="timeline-icon">
-                    <img src="images/college-graduation.png" class="" height="21" width="21" alt="">
+                    <i class="fa fa-graduation-cap fa-fw" aria-hidden="true" style="font-size:24px;color:white;"></i>
                 </div>
                 <div class="timeline-content">
                     <p class="timeline-content-date">2015-19</h2>
@@ -193,7 +222,7 @@
                         </p>
                 </div>
             </div> -->
-            
+
         </div>
         <hr>
     </div>
@@ -257,8 +286,8 @@
                                 <h3 class="card-product-name">RMV</h3>
                             </a>
                             <!-- <h5 class="card-product-price">$19.99</h5> -->
-                            <p class="card-product-description">An app that was made while participating for AICTE Smart India Hackathon 2018 under the Ministry of
-                                Health &amp; Family Welfare.
+                            <p class="card-product-description">An app that was made while participating for AICTE Smart India Hackathon 2018 under the Ministry
+                                of Health &amp; Family Welfare.
                             </p>
                         </div>
                     </div>
@@ -298,17 +327,34 @@
                     <div class="grid-container">
                         <div class="grid-x grid-padding-x">
                             <div class="medium-6 cell">
-                                <input type="text" placeholder="Your Name" name='Name' required>
+                                <div class="input-group">
+                                    <span class="input-group-label">
+                                        <i class="fa fa-user-o"></i>
+                                    </span>
+                                    <input class="input-group-field" type="text" placeholder="Name" name='Name' required>
+                                </div>
                             </div>
                             <div class="medium-6 cell">
-                                <input type="tel" placeholder="Mobile" name="Mobile">
+                                <div class="input-group">
+                                    <span class="input-group-label">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                    <input class="input-group-field" type="tel" placeholder="Mobile" name="Mobile">
+                                </div>
                             </div>
                         </div>
                         <div class="medium-6 cell">
-                            <input type="email" placeholder="Email" name="Email" required>
+                            <div class="input-group">
+                                <span class="input-group-label">
+                                    <i class="fa fa-envelope-o"></i>
+                                </span>
+                                <input class="input-group-field" type="email" placeholder="Email" name="Email" required>
+                            </div>
                         </div>
                         <label>
+
                             <textarea rows=5 placeholder="Leave a Message" name="Message"></textarea>
+
                         </label>
                         <input type="submit" class="button expanded" value="Send Message">
                     </div>
