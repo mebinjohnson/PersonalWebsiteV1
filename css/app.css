@@ -897,7 +897,9 @@ body.noScroll {
 
 
 
-
+.card-product{
+  height: 550px;
+}
 
 .card-product:hover .card-product-img-wrapper img {
   -webkit-filter: grayscale(0);
@@ -936,8 +938,8 @@ body.noScroll {
 
 .card-product-img-wrapper img {
   transition: all 0.2s ease;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+  -webkit-filter: grayscale(0.25);
+          filter: grayscale(0.25);
   width: 100%;
 }
 
