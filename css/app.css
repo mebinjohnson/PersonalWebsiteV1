@@ -172,7 +172,6 @@ body.noScroll {
 
 .navbar #menu li a {
   color: #fff;
-  /* color: #000; */
   float: left;
   padding: 0px 30px;
   font-family: 'Advent Pro', sans-serif;
@@ -898,7 +897,7 @@ body.noScroll {
 
 
 .card-product{
-  height: 550px;
+  height: 450px;
 }
 
 .card-product:hover .card-product-img-wrapper img {
