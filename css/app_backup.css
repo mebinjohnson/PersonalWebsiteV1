@@ -1,0 +1,204 @@
+
+.button-line{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    border: #666;
+  
+  }
+  .button-line:hover{
+    /* background: rgba(0,0,0,0.09); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: background 0.7s ease, box-shadow 0.7s ease;
+  }
+  .buttonspan{
+    display: block;
+    padding: 15px 50px;
+  }
+  .button-line::before, .button-line::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: black;
+  }
+  
+  .buttonspan::before, .buttonspan::after{
+    content:"";
+    width:2px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: black;
+  }
+  .button-line:hover::before, .button-line:hover::after{
+    width: 100%;
+  }
+  .button-line:hover .buttonspan::before, .button-line:hover .buttonspan::after{
+    height: 100%;
+  }
+  
+  .btn-2::before, .btn-2::after{
+    transition-delay: 0s;
+  }
+  .btn-2 .buttonspan::before, .btn-2 .buttonspan::after{
+    transition-delay: 0.2s;
+  }
+  .btn-2::before{
+    right: 0;
+    top: 0;
+  }
+  .btn-2::after{
+    left: 0;
+    bottom: 0;
+  }
+  .btn-2 .buttonspan::before{
+    left: 0;
+    top: 0;
+  }
+  .btn-2 .buttonspan::after{
+    right: 0;
+    bottom: 0;
+  }
+  .btn-2:hover::before, .btn-2:hover::after{
+    transition-delay: 0.2s;
+  }
+  .btn-2:hover .buttonspan::before, .btn-2:hover .buttonspan::after{
+    transition-delay: 0s;
+  }
+
+
+
+
+
+
+
+#toggle {
+  position: fixed;
+  right: 20px;
+  padding-top: 14px;
+  z-index: 10;
+  width: 32px;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#toggle .span {
+  height: 4px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px black;
+  transition: all 0.3s ease-out;
+  backface-visibility: hidden;
+  margin: 5px auto;
+}
+
+#toggle.on #one {
+  transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+#toggle.on #two {
+  opacity: 0;
+}
+
+#toggle.on #three {
+  transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+
+#resize {
+  z-index: 5;
+  top: 0px;
+  position: fixed;
+  background: black;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  display: table;
+  overflow: hidden;
+}
+
+#resize #menu {
+  height: 100%;
+  display: table-cell;
+  vertical-align: center;
+}
+
+#resize #menu li {
+  display: block;
+  text-align: center;
+  padding: 23px 0;
+  font-size: 50px;
+  min-height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+  margin-top:60px;
+}
+
+#resize #menu li a {
+  color: #fff;
+}
+
+#resize.active {
+  visibility: visible;
+  opacity: 0.99;
+}
+
+@media(max-width: 768px) {
+  .header-box{
+    height: 750px;
+    background-image: url(../images/black_water_mob.jpg);
+  }
+  .header-title h1 {
+    font-size: 45px;
+  }
+  .header-title h2 {
+    font-size: 20px;
+  }
+  .header-title h3 {
+    font-size: 15px;
+  }
+
+  #toggle {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 6px;
+  }
+
+  nav #my_logo {
+        margin-left: 0px;
+  }
+
+  #menu a {
+        font-family: "Advent Pro";
+        font-weight: 200;
+        font-size: 20px;
+  }
+
+  nav #menu {
+        display: none;
+  }
+}
+
+@media(min-width: 768px) {
+  #resize {
+        visibility: hidden !important;
+  }
+}
+
+
+
+
