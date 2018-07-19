@@ -204,7 +204,7 @@ body.noScroll {
 .curtain-menu-wrapper .curtain-menu-list li {
   width: 100%;
   font-weight: 100;
-  font-size: 2rem;
+  font-size: 1.25rem;
   min-height: 2.8125rem;
   padding: 1rem;
   text-align: center;
@@ -215,7 +215,7 @@ body.noScroll {
 }
 
 .curtain-menu-wrapper .curtain-menu-list li:hover {
-  background: rgba(255, 255, 255, 0.7);
+  background: white;
 }
 
 .curtain-menu-wrapper .curtain-menu-list li:hover a {
@@ -437,11 +437,11 @@ body.noScroll {
 }
 @media screen and (max-width: 768px) {
   .header-box{
-    height: 700px;
+    height: 680px;
     background-image: url(../images/black_water_mob.jpg);
   }
   .header-title h1 {
-    font-size: 45px;
+    font-size: 42px;
   }
   .header-title h2 {
     font-size: 20px;
@@ -817,7 +817,7 @@ text-align: center; }
   overflow-x: hidden;
 }
 .contact article {
-padding: 100px 2em;
+padding: 80px 2em;
 max-width: 640px;
 margin: 0 auto;
 text-align: center; }
@@ -840,6 +840,26 @@ text-align: center; }
 
 .input-group-field{
   border-radius: 0px 0.2rem 0.2rem 0;
+}
+.contact-subtitle{
+  text-align:center;
+  color: #1779ba;
+  padding-bottom:50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 40em) {
+  .contact article {
+    padding: 50px 1rem;
+  }
+
+  .card{
+    padding: 0.75rem; 
+  }
+  .contact-subtitle{
+    font-size: 25px;
+  }
 }
 
 
