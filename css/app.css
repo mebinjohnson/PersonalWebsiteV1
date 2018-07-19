@@ -118,37 +118,32 @@ body.noScroll {
 .navbar #menu li a {
   color: #fff;
   float: left;
+  font-weight: 300;
   padding: 0px 30px;
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Roboto Slab', serif,"HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
 }
 
-.navbar #my_logo a:hover,
+
 .navbar #menu li a:hover,
-.navbar #menu li a.active,
-.navbar #my_logo a.active{
+.navbar #menu li a.active{
   background-color: white;
   color: #1779ba;
-  font-weight: 600;
+  font-weight: 600; 
   transform: scale(1.1);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: background-color 0.5s ease, transform .3s, color 0.5s ease;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: background-color 1s ease, transform .3s, color 0.5s ease, font-weight 0.5s ease;
 }
-.navbar #my_logo a:active{
+.navbar #my_logo a:hover{
   background-color: white;
-  color: black;
+  color: #1779ba;
   transform: scale(1.1);
-  transition: background-color 0.5s ease, transform .3s, color 0.5s ease;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: background-color 1s ease, transform .3s, color 0.5s ease, font-weight 0.5s ease;
 }
 
 @media(max-width: 768px) {
   nav #my_logo {
         margin-left: 0px;
-  }
-
-  #menu a {
-        font-family: "Advent Pro";
-        font-weight: 200;
-        font-size: 20px;
   }
 
   nav #menu {
@@ -478,7 +473,7 @@ body.noScroll {
   transform: skew(0deg, -5deg);
   overflow: hidden;
   margin-top: -60px;
-  background: white;
+  background: #FAFAFA;;
 }
 
 .about article{
@@ -509,6 +504,10 @@ body.noScroll {
   padding: 80px 7rem;
   margin: 0 auto;
   text-align: center; }
+
+.skills article div div .card:hover{
+  transform: translateY(-10%);
+}
 
 .marketing-site-features {
   text-align: center;
@@ -714,13 +713,19 @@ max-width: 740px;
 margin: 0 auto;
 text-align: center; }
 
+.works article div div .card{
+  padding: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
 
 .card-product{
   height: 450px;
   background: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .card-product:hover .card-product-img-wrapper img {
+
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
@@ -795,6 +800,25 @@ max-width: 640px;
 margin: 0 auto;
 text-align: center; }
 
+.card{
+  padding: 2rem; 
+  padding-top: 2.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.button{
+  border-radius: 0.25rem;
+  transition: all 0.5s ease;
+}
+.button:hover{
+  transform: scale(0.97);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.input-group-field{
+  border-radius: 0px 0.2rem 0.2rem 0;
+}
 
 
 /* -----------------------------------------------------------------
