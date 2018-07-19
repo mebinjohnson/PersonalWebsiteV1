@@ -1,16 +1,5 @@
 $(document).foundation()
-if (document.documentElement.clientWidth < 768) {
-    // var prev = 0;
-    // var $window = $(window);
-    // var nav = $('.navbar');
-
-    // $window.on('scroll', function () {
-    //     var scrollTop = $window.scrollTop();
-    //     nav.toggleClass('hidden', scrollTop > prev);
-    //     prev = scrollTop;
-    // });
-}
-else {
+if (document.documentElement.clientWidth > 768) {
     $(window).scroll(function (e) {
         parallax();
     });
@@ -20,4 +9,3 @@ else {
         $('.header-box').css('background-position', 'center ' + (scrolled * 0.35) + 'px');
     }
 }
-

@@ -1,12 +1,9 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Advent+Pro');
+@import url('https://fonts.googleapis.com/css?family=Raleway:700|Roboto+Slab:300');
 @font-face {
 	font-family: 'wild';
   src: url('../wildyouth.otf');
 }
-/* @import url('https://fonts.googleapis.com/css?family=Anton|Roboto'); */
-
 
 /* -----------------------------------------------------------------
                              G E N E R A L
@@ -53,8 +50,9 @@ body {
   height: 100vh;
   line-height: 1.6;
   background:#FAFAFA;
-  font-weight: 400;
-  font-family: 'Raleway',"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', serif,"HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+  font-weight: 300;
+  color: #2f3640;
   background-size: cover;
   display: table;
   overflow: auto;
@@ -129,7 +127,8 @@ body.noScroll {
 .navbar #menu li a.active,
 .navbar #my_logo a.active{
   background-color: white;
-  color: black;
+  color: #1779ba;
+  font-weight: 600;
   transform: scale(1.1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: background-color 0.5s ease, transform .3s, color 0.5s ease;
@@ -402,23 +401,23 @@ body.noScroll {
 .header-title h1 {
   color: #fff;
   font-family: 'Raleway', sans-serif;
-  font-weight: bolder;
+  font-weight: 900;
   text-align: center;
   font-size: 6rem;
 }
 .header-title h2 {
   color: #fff;
-  font-family: "Advent Pro";
-  font-weight: lighter;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 30px;
 }
 .header-title h3 {
   color: #fff;
   margin-left: 45%;
-  font-family: "Advent Pro";
+  font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 20px;
 }
 
@@ -459,6 +458,13 @@ body.noScroll {
 }
 
 
+.title{
+  text-align:center; 
+  font-family: 'Raleway', sans-serif;
+  color: #1779ba;
+  font-weight: 800;
+}
+
 /* -----------------------------------------------------------------
                             A B O U T
 -------------------------------------------------------------------*/
@@ -476,7 +482,6 @@ body.noScroll {
 }
 
 .about article{
-  color: black;
   display: block;
   padding: 80px;
   transform: skew(0deg, 5deg);
@@ -649,6 +654,7 @@ body.noScroll {
 .timeline .timeline-item .timeline-content .timeline-content-date {
   font-size: 16px;
   font-weight: bold;
+  color: #1779ba;
   margin-bottom: 0;
 }
 
@@ -967,5 +973,6 @@ text-align: center; }
   }
   .site-footer-bottom {
     text-align: center;
+    padding: 1rem 1rem;
   }
 }
