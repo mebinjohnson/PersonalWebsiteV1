@@ -65,7 +65,6 @@ body.noScroll {
 
 
 
-
 /* -----------------------------------------------------------------
                              N A V
 -------------------------------------------------------------------*/
@@ -105,7 +104,6 @@ body.noScroll {
   font-weight: 300;
 }
 
-
 .navbar #menu{
   right: 5%;
   position: absolute;
@@ -139,7 +137,7 @@ body.noScroll {
 .navbar #my_logo a:active{
   background-color: white;
   color: black;
-  transform: scale(1.1), translateY(5px);
+  transform: scale(1.1);
   transition: background-color 0.5s ease, transform .3s, color 0.5s ease;
 }
 
@@ -151,26 +149,6 @@ body.noScroll {
 
 
 @media(max-width: 768px) {
-  .header-box{
-    height: 750px;
-    background-image: url(../images/black_water_mob.jpg);
-  }
-  .header-title h1 {
-    font-size: 45px;
-  }
-  .header-title h2 {
-    font-size: 20px;
-  }
-  .header-title h3 {
-    font-size: 15px;
-  }
-
-  #toggle {
-        visibility: visible;
-        opacity: 1;
-        margin-top: 6px;
-  }
-
   nav #my_logo {
         margin-left: 0px;
   }
@@ -313,7 +291,7 @@ body.noScroll {
   top: 50%;
   left: 50%;
   width: 30px;
-  height: 5px;
+  height: 4px;
   background: white;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -400,6 +378,7 @@ body.noScroll {
 -------------------------------------------------------------------*/
 
 
+
 .header-box{
   position: relative;
   height: 750px;
@@ -466,7 +445,21 @@ body.noScroll {
   background-image: url(../images/black-patt.jpg);
   min-height: 200px;
 }
-
+@media screen and (max-width: 768px) {
+  .header-box{
+    height: 750px;
+    background-image: url(../images/black_water_mob.jpg);
+  }
+  .header-title h1 {
+    font-size: 45px;
+  }
+  .header-title h2 {
+    font-size: 20px;
+  }
+  .header-title h3 {
+    font-size: 15px;
+  }
+}
 
 
 /* -----------------------------------------------------------------
@@ -500,12 +493,6 @@ body.noScroll {
   padding-top: 20px;
 }
 
-.education{
-  color: black;
-  background: white;
-  display: block;
-  padding: 80px 0;
-}
 
 
 .caption {
@@ -538,7 +525,7 @@ body.noScroll {
     text-align: center; }
 
   .content_main:nth-last-child(1){
-    margin-bottom: px;
+    margin-bottom: 0px;
     z-index: 3;
   }
 
@@ -623,6 +610,17 @@ body.noScroll {
                     E D U C A T I O N - Timeline
 -------------------------------------------------------------------*/
 
+.education{
+  color: black;
+  background: white;
+  display: block;
+  position: relative;
+  padding: 7em 6.5em;
+  left: 0px;
+  right: 0px;
+}
+
+
 .timeline .timeline-item::after, .timeline .timeline-item::before {
   clear: both;
   content: '';
@@ -639,7 +637,7 @@ body.noScroll {
 }
 
 .timeline::before {
-  background: skyblue;
+  background: #1779ba;
   content: '';
   height: 100%;
   left: 50%;
@@ -672,7 +670,7 @@ body.noScroll {
 }
 
 .timeline .timeline-item .timeline-icon {
-  background: black;
+  background: #1779ba;
   border-radius: 50%;
   height: 50px;
   left: 50%;
@@ -915,6 +913,8 @@ body.noScroll {
 
 .site-footer-top{
   padding: 2rem 2rem;
+  right: 0%;
+  left:0;
   background: #212121;
   color: white;
 }
@@ -965,6 +965,8 @@ body.noScroll {
 
 .site-footer-bottom {
   background: black;
+  right: 0%;
+  left:0;
   color: white;
   padding: 1rem 3rem;
 }
@@ -995,7 +997,10 @@ body.noScroll {
   }
   .copyrights{
     padding-left: 0;
-    position: relative; margin-top: 0.9rem;
+    right: 0%;
+    left:0;
+    position: relative; 
+    margin-top: 0.9rem;
   }
   .site-footer-bottom {
     text-align: center;
