@@ -437,7 +437,7 @@ body.noScroll {
 }
 @media screen and (max-width: 768px) {
   .header-box{
-    height: 750px;
+    height: 700px;
     background-image: url(../images/black_water_mob.jpg);
   }
   .header-title h1 {
