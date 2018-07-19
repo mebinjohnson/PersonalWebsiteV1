@@ -55,7 +55,7 @@ body {
   color: #2f3640;
   background-size: cover;
   display: table;
-  overflow: auto;
+  overflow-x: hidden;
 }
 body.noScroll {
   overflow: hidden;
@@ -121,6 +121,7 @@ body.noScroll {
   font-weight: 300;
   padding: 0px 30px;
   font-family: 'Roboto Slab', serif,"HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+  transition: background-color 1s ease, transform .3s, color 0.5s ease, font-weight 0.5s ease;
 }
 
 
@@ -131,7 +132,7 @@ body.noScroll {
   font-weight: 600; 
   transform: scale(1.1);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: background-color 1s ease, transform .3s, color 0.5s ease, font-weight 0.5s ease;
+  /* transition: background-color 1s ease, transform .3s, color 0.5s ease, font-weight 0.5s ease; */
 }
 .navbar #my_logo a:hover{
   background-color: white;
@@ -503,7 +504,9 @@ body.noScroll {
 .skills article {
   padding: 80px 7rem;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  overflow-x: hidden;
+}
 
 .skills article div div .card:hover{
   transform: translateY(-10%);
@@ -557,6 +560,7 @@ body.noScroll {
   padding: 7em 6.5em;
   left: 0px;
   right: 0px;
+  overflow-x: hidden;
 }
 
 
@@ -705,7 +709,7 @@ body.noScroll {
   color: black;
   z-index: 2;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .works article {
 padding: 100px 2em;
@@ -793,6 +797,7 @@ text-align: center; }
   z-index: 2;
   width: 100%;
   overflow: hidden;
+  overflow-x: hidden;
 }
 .contact article {
 padding: 100px 2em;
@@ -824,6 +829,14 @@ text-align: center; }
 /* -----------------------------------------------------------------
                             F O O T E R
 -------------------------------------------------------------------*/
+
+footer{
+  left: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
 
 .profile-photo{
   height: 15rem;
@@ -906,8 +919,11 @@ text-align: center; }
 
 .site-footer-top{
   padding: 2rem 2rem;
-  right: 0%;
-  left:0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
   background: #212121;
   color: white;
 }
@@ -958,9 +974,12 @@ text-align: center; }
 
 .site-footer-bottom {
   background: black;
-  right: 0%;
-  left:0;
   color: white;
+  left: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
   padding: 1rem 3rem;
 }
 
