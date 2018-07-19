@@ -52,7 +52,7 @@ body {
   width: 100%;
   height: 100vh;
   line-height: 1.6;
-  background:white;
+  background:#FAFAFA;
   font-weight: 400;
   font-family: 'Raleway',"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-size: cover;
@@ -141,13 +141,6 @@ body.noScroll {
   transition: background-color 0.5s ease, transform .3s, color 0.5s ease;
 }
 
-/* -----------------------------------------------------------------
-                        N A V    M E N U
--------------------------------------------------------------------*/
-
-
-
-
 @media(max-width: 768px) {
   nav #my_logo {
         margin-left: 0px;
@@ -163,6 +156,10 @@ body.noScroll {
         display: none;
   }
 }
+
+/* -----------------------------------------------------------------
+                      C U R T A I N    M E N U
+-------------------------------------------------------------------*/
 
 
 
@@ -463,11 +460,11 @@ body.noScroll {
 
 
 /* -----------------------------------------------------------------
-                            C O N T E N T
+                            A B O U T
 -------------------------------------------------------------------*/
 
 
-.wrapper{
+.about{
   position: relative;
 	display:block;
   width:100%;
@@ -478,7 +475,7 @@ body.noScroll {
   background: white;
 }
 
-.about{
+.about article{
   color: black;
   display: block;
   padding: 80px;
@@ -489,73 +486,12 @@ body.noScroll {
   padding-right: 20%;
   text-align: center;
 }
+
 .about p{
   padding-top: 20px;
 }
 
 
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-.content_main {
-  position: relative;
-  color: black;
-  z-index: 2;
-  width: 100%;
-  overflow: hidden; }
-  .content_main article {
-    padding: 100px 2em;
-    max-width: 640px;
-    margin: 0 auto;
-    text-align: center; }
-
-  .content_main:nth-last-child(1){
-    margin-bottom: 0px;
-    z-index: 3;
-  }
-
-.contact{
-    position: relative;
-    color: black;
-    z-index: 2;
-    width: 100%;
-    overflow: hidden;
-}
-.contact article {
-  padding: 100px 2em;
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center; }
-
-
-
-  .works{
-    position: relative;
-    color: black;
-    z-index: 2;
-    width: 100%;
-    overflow: hidden;
-}
-.works article {
-  padding: 100px 2em;
-  max-width: 740px;
-  margin: 0 auto;
-  text-align: center; }
 
 
 
@@ -612,7 +548,6 @@ body.noScroll {
 
 .education{
   color: black;
-  background: white;
   display: block;
   position: relative;
   padding: 7em 6.5em;
@@ -760,10 +695,23 @@ body.noScroll {
                             W O R K S
 -------------------------------------------------------------------*/
 
+.works{
+  position: relative;
+  color: black;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+}
+.works article {
+padding: 100px 2em;
+max-width: 740px;
+margin: 0 auto;
+text-align: center; }
 
 
 .card-product{
   height: 450px;
+  background: white;
 }
 
 .card-product:hover .card-product-img-wrapper img {
@@ -824,7 +772,22 @@ body.noScroll {
 
 
 
+/* -----------------------------------------------------------------
+                            C O N T A C T
+-------------------------------------------------------------------*/
 
+.contact{
+  position: relative;
+  color: black;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+}
+.contact article {
+padding: 100px 2em;
+max-width: 640px;
+margin: 0 auto;
+text-align: center; }
 
 
 
@@ -1006,20 +969,3 @@ body.noScroll {
     text-align: center;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
