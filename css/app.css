@@ -519,7 +519,7 @@ body.noScroll {
   width: 100%;
   overflow: hidden; }
   .content_main article {
-    padding: 100px 0;
+    padding: 100px 2em;
     max-width: 640px;
     margin: 0 auto;
     text-align: center; }
@@ -537,7 +537,7 @@ body.noScroll {
     overflow: hidden;
 }
 .contact article {
-  padding: 100px 0;
+  padding: 100px 2em;
   max-width: 640px;
   margin: 0 auto;
   text-align: center; }
@@ -552,7 +552,7 @@ body.noScroll {
     overflow: hidden;
 }
 .works article {
-  padding: 100px 0;
+  padding: 100px 2em;
   max-width: 740px;
   margin: 0 auto;
   text-align: center; }
