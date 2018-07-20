@@ -143,13 +143,20 @@ body.noScroll {
 }
 
 @media(max-width: 768px) {
-  nav #my_logo {
+  .navbar {
+    height: 60px;
+  }
+
+  .navbar #my_logo {
         margin-left: 0px;
+        font-size: 17px;
+        line-height: 60px;
   }
 
   nav #menu {
         display: none;
   }
+
 }
 
 /* -----------------------------------------------------------------
@@ -263,7 +270,7 @@ body.noScroll {
   /* top: 1.25rem;
   right: 1.25rem; */
   right: 20px;
-  top: 8px;
+  top: 3px;
   z-index: 5;
   visibility: hidden;
 }
@@ -272,9 +279,9 @@ body.noScroll {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 5000px;
-  background: black;
+  background: none;
   position: relative;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
   cursor: pointer;
 }
 
@@ -282,8 +289,9 @@ body.noScroll {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 30px;
+  width: 35px;
   height: 4px;
+  border-radius: 1px;
   background: white;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -309,9 +317,9 @@ body.noScroll {
           transform: translateX(-50%) translateY(150%) rotate(-180deg);
 }
 
-.curtain-menu-button-toggle:hover {
+/* .curtain-menu-button-toggle:hover {
   background: black;
-}
+} */
 
 .curtain-menu-button-toggle:hover div {
   background: #fefefe;
@@ -817,14 +825,15 @@ text-align: center; }
   overflow-x: hidden;
 }
 .contact article {
-padding: 80px 2em;
-max-width: 640px;
+padding: 80px 1em;
+max-width: 670px;
 margin: 0 auto;
 text-align: center; }
 
 .card{
-  padding: 2rem; 
-  padding-top: 2.5rem;
+  padding: 1rem; 
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
