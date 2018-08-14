@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Page Not Found</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
     <style>
-
         * {
             line-height: 1.2;
             margin: 0;
@@ -13,6 +15,7 @@
 
         html {
             color: #888;
+            background: black;
             display: table;
             font-family: sans-serif;
             height: 100%;
@@ -22,6 +25,7 @@
 
         body {
             display: table-cell;
+            background: black;
             vertical-align: middle;
             margin: 2em auto;
         }
@@ -39,7 +43,8 @@
 
         @media only screen and (max-width: 280px) {
 
-            body, p {
+            body,
+            p {
                 width: 95%;
             }
 
@@ -49,12 +54,23 @@
             }
 
         }
-
     </style>
 </head>
+
 <body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+        <p id="my_logo" style="  color: #fff;
+        transition: all 0.3s ease-out;
+        font-family: 'wild';
+        font-size: 2em;
+        font-weight: 300;">Mebin Johnson
+        </p>
+    <div class="card" style="margin: 2.5rem">
+        <h1>Page Not Found</h1>
+        <p>Sorry, but the page you were trying to view does not exist.</p>
+        <br>
+        <button onclick=location.href='index.html' class="button float-center">Take me home!</button>
+    </div>
 </body>
+
 </html>
 <!-- IE needs 512+ bytes: https://blogs.msdn.microsoft.com/ieinternals/2010/08/18/friendly-http-error-pages/ -->
