@@ -61,6 +61,78 @@ body.noScroll {
   overflow: hidden;
 }
 
+
+.loadingDiv {
+  position:absolute;;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  z-index: 1001;
+  background-color:#000;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #ffffff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #ffffff;
+  text-indent: -9999em;
+  margin: 49vh auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+
 .card{
   padding: 2rem; 
   padding-top: 4rem;
@@ -82,15 +154,13 @@ body.noScroll {
   height: 70px;
   position: fixed;
   z-index: 10;
-  transition: top 0.7s;
-  transition: -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1), height 1s ease;
 }
+
 .navbar.hidden {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
-          transform: translateY(-100%);
+          transform:3 translateY(-100%);
 }
 
 .navbar #my_logo{
@@ -108,6 +178,7 @@ body.noScroll {
   font-family: 'wild';
   padding: 0px 30px;
   font-weight: 300;
+  transition: all 1s ease;
 }
 
 .navbar #menu{
@@ -120,7 +191,7 @@ body.noScroll {
   cursor: pointer;
   line-height: 70px;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
 }
 
 .navbar #menu li a {
